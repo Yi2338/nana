@@ -12,8 +12,8 @@ TEXTS = [
     "梅兰妮"
 ]
 
-# 替换成你的实际 OSS 域名，注意添加 /s
-OSS_BASE_URL = "https://your-actual-bucket.oss-region.aliyuncs.com/s"
+# 替换成你实际的 Bucket 域名
+OSS_BASE_URL = "https://你的bucket名字.oss-区域.aliyuncs.com/s"
 
 VIDEO_MAPPING = {
     "哇，啊": f"{OSS_BASE_URL}/static/videos/银如叫.mp4",
