@@ -4,13 +4,14 @@ from openai import OpenAI
 import numpy as np
 from fastapi.responses import RedirectResponse
 from config import TEXTS, VIDEO_MAPPING, SYSTEM_PROMPT, POLISH_PROMPT  # 导入配置
+import os
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # 初始化 DeepSeek 客户端
 client = OpenAI(
-    api_key="sk-03c29661b029435cb6ea7a7afb795a35",
+    api_key=os.getenv('OPENAI_API_KEY'),  # 使用环境变量
     base_url="https://api.deepseek.com"
 )
 
