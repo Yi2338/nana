@@ -13,7 +13,7 @@ TEXTS = [
 ]
 
 # 替换成你实际的 Bucket 域名
-OSS_BASE_URL = "https://你的bucket名字.oss-区域.aliyuncs.com/s"
+OSS_BASE_URL = "https://nana2338.oss-cn-beijing.aliyuncs.com/s"
 
 VIDEO_MAPPING = {
     "哇，啊": f"{OSS_BASE_URL}/static/videos/银如叫.mp4",

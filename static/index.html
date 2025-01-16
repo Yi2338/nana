@@ -127,7 +127,7 @@
         input.value = '';
 
         // 添加用户消息
-        addMessage('你', message, 'user-message', 'https://你的bucket名字.oss-区域.aliyuncs.com/s/static/images/user-avatar.jpeg');
+        addMessage('你', message, 'user-message', 'https://nana2338.oss-cn-beijing.aliyuncs.com/s/static/images/user-avatar.jpeg');
 
         try {
             const response = await fetch('/chat', {
@@ -148,7 +148,7 @@
             const messageDiv = document.createElement('div');
             messageDiv.className = `message bot-message`;
             messageDiv.innerHTML = `
-                <img src="https://你的bucket名字.oss-区域.aliyuncs.com/s/static/images/nana-avatar.jpeg" alt="娜娜" class="avatar">
+                <img src="https://nana2338.oss-cn-beijing.aliyuncs.com/s/static/images/nana-avatar.jpeg" alt="娜娜" class="avatar">
                 <div class="message-content">
                     <strong>娜娜:</strong> <span class="typing-text"></span>
                 </div>
@@ -163,7 +163,7 @@
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
         } catch (error) {
             console.error('Error:', error);
-            addMessage('系统', '发生错误，请稍后重试', 'bot-message', 'https://你的bucket名字.oss-区域.aliyuncs.com/s/static/images/nana-avatar.jpeg');
+            addMessage('系统', '发生错误，请稍后重试', 'bot-message', 'https://nana2338.oss-cn-beijing.aliyuncs.com/s/static/images/nana-avatar.jpeg');
         }
     }
 
